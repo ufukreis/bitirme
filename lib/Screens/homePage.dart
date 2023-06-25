@@ -74,7 +74,7 @@ class _HomePageState extends State<HomePage> {
     )));
   }
 
-  Widget _head(BuildContext context ) {
+  Widget _head(BuildContext context) {
     return Stack(children: [
       Column(
         children: [
@@ -98,11 +98,13 @@ class _HomePageState extends State<HomePage> {
                           width: 40,
                           color: Colors.blue.shade100,
                           child: IconButton(
-                               onPressed: () => {
-                             Navigator.push( context , MaterialPageRoute(builder: (context)=>Login()))
-                               },                            
+                            onPressed: () => {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => Login()))
+                            },
                             icon: Icon(Icons.output_outlined),
-                        
                             color: Colors.white,
                           )),
                     )),
